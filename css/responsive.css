@@ -1,0 +1,92 @@
+@media screen and (max-width:1920px){
+
+}
+
+@media screen and (max-width:1680px){
+    
+}
+
+@media screen and (max-width:1600px){
+    
+}
+
+@media screen and (max-width:1440px){
+    
+}
+
+@media screen and (max-width:1400px){
+    
+}
+
+@media screen and (max-width:1366px){
+}
+
+@media screen and (max-width:1360px){
+    
+}
+
+@media screen and (max-width:1280px){
+    
+}
+
+@media screen and (max-width:1199px){
+    
+}
+
+@media screen and (max-width:1024px){
+    
+}
+
+@media screen and (min-width:1023px) and (max-width:992px){
+    
+}
+
+@media screen and (max-width:991px){
+    .kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container {
+        max-width: 80%;
+    }
+    .kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    
+}
+
+@media screen and (max-width:767px){
+    .kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container {
+        max-width: 95%;
+    }
+    .kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container .banner-slider-layer .typewrite, 
+    .kedarnath-info-section .kedarnath-content-layer .kedarnath-information .typewrite, 
+    .kedarnath-skills-section .kedarnath-skills-image-layer .typewrite,
+    .kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite{
+        font-size:17px;
+    }
+    .kedarnath-info-section .kedarnath-content-layer .kedarnath-information .content-box p{
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container {
+        max-width: 65%;
+    }
+}
+
+@media screen and (max-width:414px){
+    
+}
+
+@media screen and (max-width:375px){
+    
+}
+
+@media screen and (max-width:360px){
+    
+}
+
+@media screen and (max-width:320px){
+    
+}
