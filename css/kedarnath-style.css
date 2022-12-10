@@ -8,43 +8,27 @@ ul,li{
     list-style: none;
 }
 
-:root{
 
+/* Background Section Start */
+
+@-moz-keyframes animatedBackgroundClouds {
+    0% { background-position: 0 0; }
+    100% { background-position: 3840px 0; }
+}
+@-webkit-keyframes animatedBackgroundClouds {
+    0% { background-position: 0 0; }
+    100% { background-position: 3840px 0; }
+}
+@-ms-keyframes animatedBackgroundClouds {
+    0% { background-position: 0 0; }
+    100% { background-position: 3840px 0; }
+}
+@keyframes animatedBackgroundClouds {
+    0% { background-position: 0 0; }
+    100% { background-position: 3840px 0; }
 }
 
-.section-divider{
-    width:100%;
-    height:50px;
-    position:relative;
-    z-index:4;
-    background-color: #fff;
-}
-
-.section-divider:before{
-    content:'';
-    background-image: url("../images/background/triangle-right.png");
-    background-size: 100%;
-    width:200px;
-    height:200px;
-    position:absolute;
-    top:-75px;
-    left:0;
-}
-
-.section-divider:after{
-    content:'';
-    background-image: url("../images/background/triangle-left.png");
-    background-size: 100%;
-    width:200px;
-    height:200px;
-    position:absolute;
-    top:-75px;
-    right:0;
-}
-
-/* Banner Section Start */
-
-.kedarnath-banner-section{
+.kedarnath-background-section{
     width:100%;
     height:100vh;
     position: fixed;
@@ -52,34 +36,82 @@ ul,li{
     left:0;
     z-index:1;
     overflow:hidden;
+    background-image: url("../images/background/clouds-ballon-bg.png");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:bottom center;
+    background-repeat:repeat-x;
+    -moz-animation: animatedBackgroundClouds 500s linear infinite;
+    -webkit-animation: animatedBackgroundClouds 500s linear infinite;
+    -ms-animation: animatedBackgroundClouds 500s linear infinite;
+    animation: animatedBackgroundClouds 500s linear infinite;
 }
 
-.kedarnath-banner-section .kedarnath-background-video-layer{
-    width:100%;
-    height:100%;
-    position: relative;
-    z-index:1;
+@-moz-keyframes animatedBackgroundTruck {
+    0% { background-position: 0 0; }
+    100% { background-position: -1920px 0; }
+}
+@-webkit-keyframes animatedBackgroundTruck {
+    0% { background-position: 0 0; }
+    100% { background-position: -1920px 0; }
+}
+@-ms-keyframes animatedBackgroundTruck {
+    0% { background-position: 0 0; }
+    100% { background-position: -1920px 0; }
+}
+@keyframes animatedBackgroundTruck {
+    0% { background-position: 0 0; }
+    100% { background-position: -1920px 0; }
 }
 
-.kedarnath-banner-section .kedarnath-background-video-layer::before{
-    content: '';
+.kedarnath-background-section .kedarnath-truck-layer{
     display: block;
     position: absolute;
     width:100%;
-    height:100%;
-    top:0;
+    height:147px;
+    overflow: hidden;
+    bottom:0;
     left:0;
-    z-index:2;
-    background-color:rgba(255, 255, 255, 0.6);
-} 
-
-.kedarnath-banner-section .kedarnath-background-video-layer video{
-    display:block;
-    min-width:100%;
-    min-height:100%;
+    z-index: 2;
+    background-image: url("../images/background/truck-bg.png");
+    background-position:bottom center;
+    background-repeat:repeat-x;
+    -moz-animation: animatedBackgroundTruck 60s linear infinite;
+    -webkit-animation: animatedBackgroundTruck 60s linear infinite;
+    -ms-animation: animatedBackgroundTruck 60s linear infinite;
+    animation: animatedBackgroundTruck 60s linear infinite;
 }
 
-.kedarnath-banner-section .kedarnath-banner-image-layer{
+.kedarnath-background-section .kedarnath-aeroplane-layer{
+    display: block;
+    position: absolute;
+    width:100%;
+    height:155px;
+    overflow: hidden;
+    top:10px;
+    left:0;
+    z-index: 2;
+    background-image: url("../images/background/aeroplane-bg.png");
+    background-position:bottom center;
+    background-repeat:repeat-x;
+    -moz-animation: animatedBackgroundClouds 15s linear infinite;
+    -webkit-animation: animatedBackgroundClouds 15s linear infinite;
+    -ms-animation: animatedBackgroundClouds 15s linear infinite;
+    animation: animatedBackgroundClouds 15s linear infinite;
+}
+/* Backgroud Section End */
+
+/* Intro Section Start */
+
+.kedarnath-intro-section{
+    width:100%;
+    height:100vh;
+    position: relative;
+    z-index:2;
+    overflow: hidden;
+}
+
+.kedarnath-intro-section .kedarnath-intro-layer{
     width:100%;
     position: absolute;
     top:50%;
@@ -91,22 +123,22 @@ ul,li{
     transform: translate(0, -50%);
     z-index:3;
 }
-.kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container{
-    max-width:70%;
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container{
+    max-width:60%;
     position: relative;
     margin:0 auto;
 }
 
-.kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container .mac-desktop-layer{
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .mac-desktop-layer{
     position: relative;
     width:100%;
 }
 
-.kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container .mac-desktop-layer img{
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .mac-desktop-layer img{
     width:100%;
 }
 
-.kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container .banner-slider-layer{
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer{
     display: block;
     position: absolute;
     width: 92%;
@@ -120,18 +152,18 @@ ul,li{
     background-color:#f2f2f2;
 }
 
-.kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container .banner-slider-layer .banner-image{
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .banner-image{
     width: 100%;
     position:relative;
 }
 
-.kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container .banner-slider-layer .banner-image img{
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .banner-image img{
     width: 100%;
     position:relative;
     z-index:1;
 }
 
-.kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container .banner-slider-layer .typewrite{
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .typewrite{
     width: 95%;
     position: absolute;
     padding:10px 20px;
@@ -151,54 +183,23 @@ ul,li{
     box-shadow:0 0 50px 0 rgba(0,0,0,0.2);
 }
 
-.kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container .banner-slider-layer .typewrite span{
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .typewrite span{
     border-right:2px solid #000;
 }
 
-/* Banner Section End */
+/* Intro Section End */
 
 /* Skills Section Start */
 
 .kedarnath-skills-section{
     width:100%;
     height:100vh;
-    margin-top:100vh;
     position: relative;
-    background-color: #fff;
-    z-index:2;
     overflow: hidden;
-
-}
-.kedarnath-skills-section .kedarnath-skills-background-video-layer{
-    width:100%;
-    height:100%;
-    position: absolute;
-    z-index:1;
-    top:0;
+    z-index: 2;
 }
 
-.kedarnath-skills-section .kedarnath-skills-background-video-layer::before{
-    content: '';
-    display: block;
-    position: absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    z-index:2;
-    background-image: url("../images/background/bg2.png");
-    background-size: cover;
-    background-position: center center;
-    opacity:0.8;
-}
-
-.kedarnath-skills-section .kedarnath-skills-background-video-layer video{
-    display:block;
-    min-width:100%;
-    min-height:100%;
-}
-
-.kedarnath-skills-section .kedarnath-skills-image-layer{
+.kedarnath-skills-section .kedarnath-skills-layer{
     width:100%;
     position: relative;
     z-index:3;
@@ -208,9 +209,10 @@ ul,li{
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    padding:50px 0;
 }
 
-.kedarnath-skills-section .kedarnath-skills-image-layer .typewrite{
+.kedarnath-skills-section .kedarnath-skills-layer .typewrite{
     width: 100%;
     max-width: 450px;
     position: absolute;
@@ -231,26 +233,26 @@ ul,li{
     box-shadow:0 0 50px 0 rgba(0,0,0,0.2);
 }
 
-.kedarnath-skills-section .kedarnath-skills-image-layer .typewrite span{
+.kedarnath-skills-section .kedarnath-skills-layer .typewrite span{
     border-right:2px solid #000;
 }
 
-.kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container{
-    max-width: 30%;
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container{
+    max-width: 25%;
     position: relative;
     margin:0 auto;
 }
 
-.kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container .iphone-layer{
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .iphone-layer{
     position: relative;
     width:100%;
 }
 
-.kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container .iphone-layer img{
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .iphone-layer img{
     width:100%;
 }
 
-.kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container .skills-slider-layer{
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer{
     display: block;
     position: absolute;
     width: 85%;
@@ -278,18 +280,18 @@ ul,li{
     transform: scale(1);
 }*/
 
-.kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container .skills-slider-layer .skill-image{
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image{
     width: 100%;
     position:relative;
 }
 
-.kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container .skills-slider-layer .skill-image img{
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image img{
     width: 100%;
     position:relative;
     z-index:1;
 }
 
-.kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite{
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite{
     width: 95%;
     position: absolute;
     padding:5px 20px;
@@ -310,12 +312,11 @@ ul,li{
     box-shadow:0 0 50px 0 rgba(0,0,0,0.2);
 }
 
-.kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite span{
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite span{
     border-right:2px solid #000;
 }
 
 /* Skills Section End */
-
 
 /* Information Section Start */ 
 
@@ -323,46 +324,15 @@ ul,li{
     width:100%;
     height:100vh;
     position: relative;
-    background-color: #fff;
-    z-index:2;
     overflow: hidden;
     padding:100px 0;
 }
 
-.kedarnath-info-section .kedarnath-info-background-video-layer{
-    width:100%;
-    height:100%;
-    position: absolute;
-    z-index:1;
-    top:0;
-}
-
-.kedarnath-info-section .kedarnath-info-background-video-layer::before{
-    content: '';
-    display: block;
-    position: absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    z-index:2;
-    background-image: url("../images/background/bg.png");
-    background-size: cover;
-    background-position: center center;
-    opacity:0.85;
-}
-
-.kedarnath-info-section .kedarnath-info-background-video-layer video{
-    display:block;
-    min-width:100%;
-    min-height:100%;
-}
-
 .kedarnath-info-section  .kedarnath-bg{
-    max-width:35%;
+    max-width:30%;
     position: absolute;
-    bottom:0;
-    left:0;
+    top:0;
+    left:10%;
     z-index:2;
 }
 
@@ -423,41 +393,10 @@ ul,li{
     width:100%;
     height:100vh;
     position: relative;
-    background-color: #fff;
-    z-index:2;
     overflow: hidden;
 }
 
-.kedarnath-my-work-section .kedarnath-my-work-background-video-layer{
-    width:100%;
-    height:100%;
-    position: absolute;
-    z-index:1;
-    top:0;
-}
-
-.kedarnath-my-work-section .kedarnath-my-work-background-video-layer::before{
-    content: '';
-    display: block;
-    position: absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    z-index:2;
-    background-image: url("../images/background/bg2.png");
-    background-size: cover;
-    background-position: center center;
-    opacity:0.8;
-} 
-
-.kedarnath-my-work-section .kedarnath-my-work-background-video-layer video{
-    display:block;
-    min-width:100%;
-    min-height:100%;
-}
-
-.kedarnath-my-work-section .kedarnath-my-work-image-layer{
+.kedarnath-my-work-section .kedarnath-my-work-layer{
     width:100%;
     position: relative;
     z-index:3;
@@ -468,26 +407,25 @@ ul,li{
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.kedarnath-my-work-section .kedarnath-my-work-image-layer .my-work-slider-container{
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container{
     max-width: 75%;
     position: relative;
     margin:0 auto;
 }
 
-.kedarnath-my-work-section .kedarnath-my-work-image-layer .my-work-slider-container .macbook-layer{
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .macbook-layer{
     position: relative;
     width:100%;
 }
 
-.kedarnath-my-work-section .kedarnath-my-work-image-layer .my-work-slider-container .macbook-layer img{
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .macbook-layer img{
     width:100%;
 }
 
-.kedarnath-my-work-section .kedarnath-my-work-image-layer .my-work-slider-container .my-work-slider-layer{
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .my-work-slider-layer{
     display: block;
     position: absolute;
     width: 76%;
-    height: 465px;
     top: 15%;
     left: 50%;
     -ms-transform: translate(-50%, -15%);
@@ -498,18 +436,18 @@ ul,li{
     background-color:#f2f2f2;
 }
 
-.kedarnath-my-work-section .kedarnath-my-work-image-layer .my-work-slider-container .my-work-slider-layer .my-work-image{
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .my-work-slider-layer .my-work-image{
     width: 100%;
     position:relative;
 }
 
-.kedarnath-my-work-section .kedarnath-my-work-image-layer .my-work-slider-container .my-work-slider-layer .my-work-image img{
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .my-work-slider-layer .my-work-image img{
     width: 100%;
     position:relative;
     z-index:1;
 }
 
-.kedarnath-my-work-section .kedarnath-my-work-image-layer .my-work-slider-container .my-work-slider-layer .typewrite{
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .my-work-slider-layer .typewrite{
     width: 95%;
     position: absolute;
     padding:10px 20px;
@@ -529,7 +467,7 @@ ul,li{
     box-shadow:0 0 50px 0 rgba(0,0,0,0.2);
 }
 
-.kedarnath-my-work-section .kedarnath-my-work-image-layer .my-work-slider-container .my-work-slider-layer .typewrite span{
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .my-work-slider-layer .typewrite span{
     border-right:2px solid #000;
 }
 
