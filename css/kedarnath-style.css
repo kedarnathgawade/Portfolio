@@ -76,6 +76,7 @@ ul,li{
     background-image: url("../images/background/truck-bg.png");
     background-position:bottom center;
     background-repeat:repeat-x;
+    background-size:cover;
     -moz-animation: animatedBackgroundTruck 60s linear infinite;
     -webkit-animation: animatedBackgroundTruck 60s linear infinite;
     -ms-animation: animatedBackgroundTruck 60s linear infinite;
@@ -94,6 +95,7 @@ ul,li{
     background-image: url("../images/background/aeroplane-bg.png");
     background-position:bottom center;
     background-repeat:repeat-x;
+    background-size:cover;
     -moz-animation: animatedBackgroundClouds 15s linear infinite;
     -webkit-animation: animatedBackgroundClouds 15s linear infinite;
     -ms-animation: animatedBackgroundClouds 15s linear infinite;
@@ -109,6 +111,24 @@ ul,li{
     position: relative;
     z-index:2;
     overflow: hidden;
+}
+
+.kedarnath-unicorn-layer{
+    display: block;
+    position: absolute;
+    width:171px;
+    height:164px;
+    overflow: hidden;
+    top:10px;
+    left:0;
+    z-index: 2;
+    background-image: url("../images/background/aeroplane-bg.png");
+    background-position:bottom center;
+    background-repeat:repeat-x;
+    -moz-animation: animatedBackgroundClouds 15s linear infinite;
+    -webkit-animation: animatedBackgroundClouds 15s linear infinite;
+    -ms-animation: animatedBackgroundClouds 15s linear infinite;
+    animation: animatedBackgroundClouds 15s linear infinite;
 }
 
 .kedarnath-intro-section .kedarnath-intro-layer{
