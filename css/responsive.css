@@ -51,7 +51,7 @@
     .kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container {
         max-width: 100%;
     }
-    .kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .typewrite, .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite, .kedarnath-skills-section .kedarnath-skills-layer .typewrite{
+    .kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .typewrite, .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite{
         font-size: 18px;
     }
 }
@@ -64,11 +64,11 @@
     .kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container {
         max-width: 95%;
     }
-    .kedarnath-banner-section .kedarnath-banner-image-layer .intro-slider-container .intro-slider-layer .typewrite, 
+    .kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .typewrite, 
     .kedarnath-info-section .kedarnath-content-layer .kedarnath-information .typewrite, 
-    .kedarnath-skills-section .kedarnath-skills-image-layer .typewrite,
-    .kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite,
-    .kedarnath-skills-section .kedarnath-skills-layer .typewrite{
+    .kedarnath-skills-section .kedarnath-skills-layer .typewrite,
+    .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite,
+    .kedarnath-my-work-section .kedarnath-my-work-layer .typewrite{
         font-size:17px;
     }
     .kedarnath-info-section .kedarnath-content-layer .kedarnath-information .content-box p{
