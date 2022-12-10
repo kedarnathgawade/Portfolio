@@ -158,7 +158,7 @@
             boxClass: 'wow',      // default
             animateClass: 'animate__animated', // default
             offset: 0,          // default
-            mobile: false,       // default
+            mobile: true,       // default
             live: true        // default
     })
     wow.init();
