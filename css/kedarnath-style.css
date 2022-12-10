@@ -67,7 +67,7 @@ ul,li{
 .kedarnath-background-section .kedarnath-truck-layer{
     display: block;
     position: absolute;
-    width:100%;
+    width:1920px;
     height:146px;
     overflow: hidden;
     bottom:0;
@@ -86,7 +86,7 @@ ul,li{
 .kedarnath-background-section .kedarnath-aeroplane-layer{
     display: block;
     position: absolute;
-    width:100%;
+    width:1920px;
     height:155px;
     overflow: hidden;
     top:10px;
