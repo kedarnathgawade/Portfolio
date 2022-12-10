@@ -42,11 +42,14 @@
 }
 
 @media screen and (max-width:991px){
-    .kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container {
+    .kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container {
         max-width: 80%;
     }
-    .kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container {
+    .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container {
         max-width: 60%;
+    }
+    .kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .typewrite, .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite{
+        font-size: 18px;
     }
 }
 
@@ -55,10 +58,10 @@
 }
 
 @media screen and (max-width:767px){
-    .kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container {
+    .kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container {
         max-width: 95%;
     }
-    .kedarnath-banner-section .kedarnath-banner-image-layer .banner-slider-container .banner-slider-layer .typewrite, 
+    .kedarnath-banner-section .kedarnath-banner-image-layer .intro-slider-container .intro-slider-layer .typewrite, 
     .kedarnath-info-section .kedarnath-content-layer .kedarnath-information .typewrite, 
     .kedarnath-skills-section .kedarnath-skills-image-layer .typewrite,
     .kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite{
