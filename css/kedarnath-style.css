@@ -334,7 +334,7 @@ ul,li{
 .kedarnath-info-section .kedarnath-unicorn-layer{
     display: block;
     position: absolute;
-    width:100%;
+    width:1920px;
     height:217px;
     overflow: hidden;
     top:10px;
@@ -346,7 +346,7 @@ ul,li{
     animation: animatedBackgroundUnicorn 60s linear infinite;
 }
 .kedarnath-info-section .kedarnath-unicorn-layer img{
-    width:100%;
+    width:1920px;
     height:217px;
 }
 
