@@ -1,6 +1,6 @@
 
     
-    $('.banner-item-slider').owlCarousel({
+    $('.intro-item-slider').owlCarousel({
         items: 1,
         loop: true,
         nav: false,
