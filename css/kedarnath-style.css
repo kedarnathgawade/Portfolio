@@ -314,6 +314,23 @@ ul,li{
     z-index:2;
 }
 
+@-moz-keyframes animatedBackgroundUnicorn {
+    0% { top:10px;left:0px; }
+    100% { top:10px;left:-1920px; }
+}
+@-webkit-keyframes animatedBackgroundUnicorn {
+    0% { top:10px;left:0px; }
+    100% { top:10px;left:-1920px; }
+}
+@-ms-keyframes animatedBackgroundUnicorn {
+    0% { top:10px;left:0px; }
+    100% { top:10px;left:-1920px; }
+}
+@keyframes animatedBackgroundUnicorn {
+    0% { top:10px;left:0px; }
+    100% { top:10px;left:-1920px; }
+}
+
 .kedarnath-info-section .kedarnath-unicorn-layer{
     display: block;
     position: absolute;
@@ -323,14 +340,14 @@ ul,li{
     top:10px;
     left:0;
     z-index: 2;
-    background-image: url("../images/background/unicorn-bg.png");
-    background-position:bottom center;
-    background-repeat:repeat-x;
-    background-size:cover;
-    -moz-animation: animatedBackgroundTruck 60s linear infinite;
-    -webkit-animation: animatedBackgroundTruck 60s linear infinite;
-    -ms-animation: animatedBackgroundTruck 60s linear infinite;
-    animation: animatedBackgroundTruck 60s linear infinite;
+    -moz-animation: animatedBackgroundUnicorn 60s linear infinite;
+    -webkit-animation: animatedBackgroundUnicorn 60s linear infinite;
+    -ms-animation: animatedBackgroundUnicorn 60s linear infinite;
+    animation: animatedBackgroundUnicorn 60s linear infinite;
+}
+.kedarnath-info-section .kedarnath-unicorn-layer img{
+    width:100%;
+    height:217px;
 }
 
 .kedarnath-info-section .kedarnath-content-layer{
