@@ -1,0 +1,490 @@
+body,div,p,span,a,ul,li,h1,h2,h3,h4,h5,h6{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+
+/* Background Section Start */
+
+@-moz-keyframes animatedBackgroundClouds {
+    0% { background-position: 0 0; }
+    100% { background-position: 3840px 0; }
+}
+@-webkit-keyframes animatedBackgroundClouds {
+    0% { background-position: 0 0; }
+    100% { background-position: 3840px 0; }
+}
+@-ms-keyframes animatedBackgroundClouds {
+    0% { background-position: 0 0; }
+    100% { background-position: 3840px 0; }
+}
+@keyframes animatedBackgroundClouds {
+    0% { background-position: 0 0; }
+    100% { background-position: 3840px 0; }
+}
+
+.kedarnath-background-section{
+    width:100%;
+    height:100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    overflow:hidden;
+    background-image: url("../images/background/clouds-ballon-bg.png");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:bottom center;
+    background-repeat:repeat-x;
+    -moz-animation: animatedBackgroundClouds 500s linear infinite;
+    -webkit-animation: animatedBackgroundClouds 500s linear infinite;
+    -ms-animation: animatedBackgroundClouds 500s linear infinite;
+    animation: animatedBackgroundClouds 500s linear infinite;
+}
+
+@-moz-keyframes animatedBackgroundTruck {
+    0% { background-position: 0 0; }
+    100% { background-position: -1920px 0; }
+}
+@-webkit-keyframes animatedBackgroundTruck {
+    0% { background-position: 0 0; }
+    100% { background-position: -1920px 0; }
+}
+@-ms-keyframes animatedBackgroundTruck {
+    0% { background-position: 0 0; }
+    100% { background-position: -1920px 0; }
+}
+@keyframes animatedBackgroundTruck {
+    0% { background-position: 0 0; }
+    100% { background-position: -1920px 0; }
+}
+
+.kedarnath-background-section .kedarnath-truck-layer{
+    display: block;
+    position: absolute;
+    width:1920px;
+    height:146px;
+    overflow: hidden;
+    bottom:0;
+    left:0;
+    z-index: 2;
+    background-image: url("../images/background/truck-bg.png");
+    background-position:bottom center;
+    background-repeat:repeat-x;
+    background-size:cover;
+    -moz-animation: animatedBackgroundTruck 60s linear infinite;
+    -webkit-animation: animatedBackgroundTruck 60s linear infinite;
+    -ms-animation: animatedBackgroundTruck 60s linear infinite;
+    animation: animatedBackgroundTruck 60s linear infinite;
+}
+
+.kedarnath-background-section .kedarnath-aeroplane-layer{
+    display: block;
+    position: absolute;
+    width:1920px;
+    height:155px;
+    overflow: hidden;
+    top:10px;
+    left:0;
+    z-index: 2;
+    background-image: url("../images/background/aeroplane-bg.png");
+    background-position:bottom center;
+    background-repeat:repeat-x;
+    background-size:cover;
+    -moz-animation: animatedBackgroundClouds 15s linear infinite;
+    -webkit-animation: animatedBackgroundClouds 15s linear infinite;
+    -ms-animation: animatedBackgroundClouds 15s linear infinite;
+    animation: animatedBackgroundClouds 15s linear infinite;
+}
+/* Backgroud Section End */
+
+/* Intro Section Start */
+
+.kedarnath-intro-section{
+    width:100%;
+    height:100vh;
+    position: relative;
+    z-index:2;
+    overflow: hidden;
+}
+
+.kedarnath-intro-section .kedarnath-intro-layer{
+    width:100%;
+    position: absolute;
+    top:50%;
+    left:0;
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index:3;
+}
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container{
+    max-width:60%;
+    position: relative;
+    margin:0 auto;
+}
+
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .mac-desktop-layer{
+    position: relative;
+    width:100%;
+}
+
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .mac-desktop-layer img{
+    width:100%;
+}
+
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer{
+    display: block;
+    position: absolute;
+    width: 92%;
+    top: 10%;
+    left: 50%;
+    -ms-transform: translate(-50%, -10%);
+    -o-transform: translate(-50%, -10%);
+    -moz-transform: translate(-50%, -10%);
+    -webkit-transform: translate(-50%, -10%);
+    transform: translate(-50%, -10%);
+    background-color:#f2f2f2;
+}
+
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .banner-image{
+    width: 100%;
+    position:relative;
+}
+
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .banner-image img{
+    width: 100%;
+    position:relative;
+    z-index:1;
+}
+
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .typewrite{
+    width: 95%;
+    position: absolute;
+    padding:10px 20px;
+    z-index:2;
+    top:50%;
+    left:2.5%;
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    background-color:#fff;
+    font-size:30px;
+    font-weight:bold;
+    text-align: center;
+    border-radius:50px;
+    box-shadow:0 0 50px 0 rgba(0,0,0,0.2);
+}
+
+.kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container .intro-slider-layer .typewrite span{
+    border-right:2px solid #000;
+}
+
+/* Intro Section End */
+
+/* Skills Section Start */
+
+.kedarnath-skills-section{
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.kedarnath-skills-section .kedarnath-skills-layer{
+    width:100%;
+    position: relative;
+    z-index:3;
+    padding:100px 0;
+}
+
+.kedarnath-skills-section .kedarnath-skills-layer .typewrite{
+    width: 100%;
+    max-width: 490px;
+    margin:0 auto 50px;
+    padding:10px 20px;
+    background-color:#fff;
+    font-size:30px;
+    font-weight:bold;
+    text-align: center;
+    border-radius:50px;
+    box-shadow:0 0 50px 0 rgba(0,0,0,0.2);
+}
+
+.kedarnath-skills-section .kedarnath-skills-layer .typewrite span{
+    border-right:2px solid #000;
+}
+
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container{
+    max-width: 25%;
+    position: relative;
+    margin:0 auto;
+}
+
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .iphone-layer{
+    position: relative;
+    width:100%;
+}
+
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .iphone-layer img{
+    width:100%;
+}
+
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer{
+    display: block;
+    position: absolute;
+    width: 85%;
+    top: 44.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -44.5%);
+    -o-transform: translate(-50%, -44.5%);
+    -moz-transform: translate(-50%, -44.5%);
+    -webkit-transform: translate(-50%, -44.5%);
+    transform: translate(-50%, -44.5%);
+    background-color: #f2f2f2;
+}
+
+/*.skill-item-slider.owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.skill-item-slider.owl-carousel .owl-stage-outer .owl-item{
+    opacity:1;
+    transform: scale(1);
+}
+
+.skill-item-slider.owl-carousel .owl-stage-outer .owl-item.active{
+    opacity:1;
+    transform: scale(1);
+}*/
+
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image{
+    width: 100%;
+    position:relative;
+}
+
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image img{
+    width: 100%;
+    position:relative;
+    z-index:1;
+}
+
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite{
+    width: 95%;
+    position: absolute;
+    padding:5px 20px;
+    z-index:2;
+    top:auto;
+    bottom:5%;
+    left:2.5%;
+    -ms-transform: translate(0%, 5%);
+    -o-transform: translate(0%, 5%);
+    -moz-transform: translate(0%, 5%);
+    -webkit-transform: translate(0%, 5%);
+    transform: translate(0%, 5%);
+    background-color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    text-align: center;
+    border-radius:50px;
+    box-shadow:0 0 50px 0 rgba(0,0,0,0.2);
+}
+
+.kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image .typewrite span{
+    border-right:2px solid #000;
+}
+
+/* Skills Section End */
+
+/* Information Section Start */ 
+
+.kedarnath-info-section{
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    z-index:2;
+}
+
+.kedarnath-info-section .kedarnath-unicorn-layer{
+    display: block;
+    position: absolute;
+    width:100%;
+    height:217px;
+    overflow: hidden;
+    top:10px;
+    left:0;
+    z-index: 2;
+    background-image: url("../images/background/unicorn-bg.png");
+    background-position:bottom center;
+    background-repeat:repeat-x;
+    background-size:cover;
+    -moz-animation: animatedBackgroundTruck 60s linear infinite;
+    -webkit-animation: animatedBackgroundTruck 60s linear infinite;
+    -ms-animation: animatedBackgroundTruck 60s linear infinite;
+    animation: animatedBackgroundTruck 60s linear infinite;
+}
+
+.kedarnath-info-section .kedarnath-content-layer{
+    width:100%;
+    position: relative;
+    z-index:3;
+    padding:100px 0;
+}
+
+.kedarnath-info-section  .kedarnath-content-layer .kedarnath-img-layer{
+    width:100%;
+    margin-bottom:50px;
+}
+
+.kedarnath-info-section .kedarnath-content-layer .kedarnath-img-layer img{
+    width:100%;
+}
+
+.kedarnath-info-section .kedarnath-content-layer .kedarnath-information{
+    width:100%;
+    position: relative;
+}
+
+.kedarnath-info-section .kedarnath-content-layer .kedarnath-information .content-box{
+    width:100%;
+    position: relative;
+    background-color: #fff;
+    padding:30px;
+    box-shadow: 0 0 50px 0 rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+
+.kedarnath-info-section .kedarnath-content-layer .kedarnath-information .content-box.heading{
+    border-radius: 50px;
+    padding:10px 20px;
+    margin-bottom: 50px;
+}
+
+.kedarnath-info-section .kedarnath-content-layer .kedarnath-information .content-box p{
+    position: relative;
+    line-height: 1.8em;
+    font-size:20px;
+    text-align: left;;
+}
+
+.kedarnath-info-section .kedarnath-content-layer .kedarnath-information .typewrite{
+    width: 100%;
+    font-size:30px;
+    font-weight:bold;
+    text-align:left;
+
+}
+
+.kedarnath-info-section .kedarnath-content-layer .kedarnath-information .typewrite span{
+    border-right:2px solid #000;
+}
+
+/* Information Section End */ 
+
+/* My Work Section Start */
+
+.kedarnath-my-work-section{
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    z-index:2;
+}
+
+.kedarnath-my-work-section .kedarnath-my-work-layer{
+    width:100%;
+    position: relative;
+    z-index:3;
+    padding:100px 0;
+}
+
+.kedarnath-my-work-section .kedarnath-my-work-layer .typewrite{
+    width: 100%;
+    max-width: 490px;
+    margin:0 auto 50px;
+    padding:10px 20px;
+    background-color:#fff;
+    font-size:30px;
+    font-weight:bold;
+    text-align: center;
+    border-radius:50px;
+    box-shadow:0 0 50px 0 rgba(0,0,0,0.2);
+}
+
+.kedarnath-my-work-section .kedarnath-my-work-layer .typewrite span{
+    border-right:2px solid #000;
+}
+
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container{
+    max-width: 75%;
+    position: relative;
+    margin:0 auto;
+}
+
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .macbook-layer{
+    position: relative;
+    width:100%;
+}
+
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .macbook-layer img{
+    width:100%;
+}
+
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .my-work-slider-layer{
+    display: block;
+    position: absolute;
+    width: 76%;
+    top: 15%;
+    left: 50%;
+    -ms-transform: translate(-50%, -15%);
+    -o-transform: translate(-50%, -15%);
+    -moz-transform: translate(-50%, -15%);
+    -webkit-transform: translate(-50%, -15%);
+    transform: translate(-50%, -15%);
+    background-color:#f2f2f2;
+}
+
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .my-work-slider-layer .my-work-image{
+    width: 100%;
+    position:relative;
+}
+
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .my-work-slider-layer .my-work-image img{
+    width: 100%;
+    position:relative;
+    z-index:1;
+}
+
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .my-work-slider-layer .typewrite{
+    width: 95%;
+    position: absolute;
+    padding:10px 20px;
+    z-index:2;
+    top:50%;
+    left:2.5%;
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    background-color:#fff;
+    font-size:30px;
+    font-weight:bold;
+    text-align: center;
+    border-radius:50px;
+    box-shadow:0 0 50px 0 rgba(0,0,0,0.2);
+}
+
+.kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container .my-work-slider-layer .typewrite span{
+    border-right:2px solid #000;
+}
+
+/* My Work Section End */
