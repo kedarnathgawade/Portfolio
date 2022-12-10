@@ -113,24 +113,6 @@ ul,li{
     overflow: hidden;
 }
 
-.kedarnath-unicorn-layer{
-    display: block;
-    position: absolute;
-    width:171px;
-    height:164px;
-    overflow: hidden;
-    top:10px;
-    left:0;
-    z-index: 2;
-    background-image: url("../images/background/aeroplane-bg.png");
-    background-position:bottom center;
-    background-repeat:repeat-x;
-    -moz-animation: animatedBackgroundClouds 15s linear infinite;
-    -webkit-animation: animatedBackgroundClouds 15s linear infinite;
-    -ms-animation: animatedBackgroundClouds 15s linear infinite;
-    animation: animatedBackgroundClouds 15s linear infinite;
-}
-
 .kedarnath-intro-section .kedarnath-intro-layer{
     width:100%;
     position: absolute;
@@ -330,6 +312,25 @@ ul,li{
     position: relative;
     overflow: hidden;
     z-index:2;
+}
+
+.kedarnath-info-section .kedarnath-unicorn-layer{
+    display: block;
+    position: absolute;
+    width:100%;
+    height:217px;
+    overflow: hidden;
+    top:10px;
+    left:0;
+    z-index: 2;
+    background-image: url("../images/background/unicorn-bg.png");
+    background-position:bottom center;
+    background-repeat:repeat-x;
+    background-size:cover;
+    -moz-animation: animatedBackgroundTruck 60s linear infinite;
+    -webkit-animation: animatedBackgroundTruck 60s linear infinite;
+    -ms-animation: animatedBackgroundTruck 60s linear infinite;
+    animation: animatedBackgroundTruck 60s linear infinite;
 }
 
 .kedarnath-info-section .kedarnath-content-layer{
