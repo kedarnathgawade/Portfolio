@@ -107,7 +107,6 @@ ul,li{
 
 .kedarnath-intro-section{
     width:100%;
-    height:100vh;
     position: relative;
     z-index:2;
     overflow: hidden;
@@ -115,15 +114,9 @@ ul,li{
 
 .kedarnath-intro-section .kedarnath-intro-layer{
     width:100%;
-    position: absolute;
-    top:50%;
-    left:0;
-    -ms-transform: translate(0, -50%);
-    -o-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    position: relative;
     z-index:3;
+    padding:100px 0;
 }
 .kedarnath-intro-section .kedarnath-intro-layer .intro-slider-container{
     max-width:60%;
@@ -282,6 +275,7 @@ ul,li{
     width: 95%;
     position: absolute;
     padding:5px 20px;
+    margin:0;
     z-index:2;
     top:auto;
     bottom:5%;
