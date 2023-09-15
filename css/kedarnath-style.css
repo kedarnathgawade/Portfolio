@@ -513,6 +513,9 @@ ul,li{
     animation: pulse 2s infinite;
   }
   .pulse:hover {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
     animation: none;
   }
   @-moz-keyframes pulse {
@@ -600,6 +603,11 @@ ul,li{
 
 .owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover{
     background-color:#ffffff;
+    color:black;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
 }
 
 .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span{
