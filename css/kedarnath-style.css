@@ -37,6 +37,7 @@ ul,li{
     z-index:1;
     overflow:hidden;
     background-image: url("../images/background/clouds-ballon-bg.png");
+    background-color: #77b2ae;
     background-size:cover;
     background-attachment:fixed;
     background-position:bottom center;
