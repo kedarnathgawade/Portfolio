@@ -263,6 +263,8 @@ ul,li{
     -moz-transform: scale(0.7);
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
+    -moz-transition: all ease-out 2s;
+    -webkit-transition: all ease-out 2s;
     transition: all ease-out 2s;
 }
 
@@ -273,6 +275,9 @@ ul,li{
     -moz-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
+    -moz-transition: all ease-out 1s;
+    -webkit-transition: all ease-out 1s;
+    transition: all ease-out 1s;
 }
 
 .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image{
