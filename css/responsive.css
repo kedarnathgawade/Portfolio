@@ -49,6 +49,14 @@
         /* max-width: 60%; */
         max-width: 80%;
     }
+    .owl-theme.skill-item-slider .owl-nav {
+        top:125%;
+        -ms-transform: translate(0%, -125%);
+        -o-transform: translate(0%, -125%);
+        -moz-transform: translate(0%, -125%);
+        -webkit-transform: translate(0%, -125%);
+        transform: translate(0%, -125%);
+    }
     .kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container {
         max-width: 100%;
     }

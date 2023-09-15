@@ -389,12 +389,14 @@ ul,li{
 }
 
 .owl-theme.skill-item-slider .owl-nav {
-    top:115%;
-    -ms-transform: translate(0%, -115%);
-    -o-transform: translate(0%, -115%);
-    -moz-transform: translate(0%, -115%);
-    -webkit-transform: translate(0%, -115%);
-    transform: translate(0%, -115%);
+    width:200%;
+    top:50%;
+    left:-50%;
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
     z-index:9;
 }
 
@@ -594,6 +596,10 @@ ul,li{
     -o-animation: pulse 2s infinite;
     animation: pulse 2s infinite;
     font-size:16px;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover{
+    background-color:#ffffff;
 }
 
 .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span{
