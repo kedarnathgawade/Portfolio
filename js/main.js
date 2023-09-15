@@ -8,7 +8,7 @@
         animateOut: 'animate__fadeOut',
         animateIn: 'animate__zoomIn',
         smartSpeed: 1000,
-        autoplayTimeout: 10000,
+        autoplayTimeout: 5000,
         autoplayHoverPause: true,
         autoplay: true,
         margin: 0,
