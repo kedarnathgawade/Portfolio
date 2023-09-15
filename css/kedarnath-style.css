@@ -257,7 +257,7 @@ ul,li{
 }
 
 .skill-item-slider.owl-carousel .owl-stage-outer .owl-item{
-    opacity:0.8;
+    opacity:1;
     -ms-transform: scale(0.7);
     -o-transform: scale(0.7);
     -moz-transform: scale(0.7);
