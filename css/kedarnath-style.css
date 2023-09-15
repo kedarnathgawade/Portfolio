@@ -218,7 +218,8 @@ ul,li{
 }
 
 .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container{
-    max-width: 25%;
+    /* max-width: 25%; */
+    max-width: 35%;
     position: relative;
     margin:0 auto;
 }
@@ -226,6 +227,7 @@ ul,li{
 .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .iphone-layer{
     position: relative;
     width:100%;
+    z-index:2;
 }
 
 .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .iphone-layer img{
@@ -235,30 +237,34 @@ ul,li{
 .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer{
     display: block;
     position: absolute;
-    width: 85%;
-    top: 44.5%;
-    left: 50%;
-    -ms-transform: translate(-50%, -44.5%);
-    -o-transform: translate(-50%, -44.5%);
-    -moz-transform: translate(-50%, -44.5%);
-    -webkit-transform: translate(-50%, -44.5%);
-    transform: translate(-50%, -44.5%);
+    z-index:1;
+    /* width: 85%; */
+    width: 64%;
+    /* top: 44.5%;
+    left: 50%; */
+    top: 30%;
+    left: 50.5%;
+    -ms-transform: translate(-50.5%, -30%);
+    -o-transform: translate(-50.5%, -30%);
+    -moz-transform: translate(-50.5%, -30%);
+    -webkit-transform: translate(-50.5%, -30%);
+    transform: translate(-50.5%, -30%);
     background-color: #f2f2f2;
 }
 
-/*.skill-item-slider.owl-carousel .owl-stage-outer {
+.skill-item-slider.owl-carousel .owl-stage-outer {
     overflow: visible;
 }
 
 .skill-item-slider.owl-carousel .owl-stage-outer .owl-item{
-    opacity:1;
-    transform: scale(1);
+    opacity:0.8;
+    transform: scale(0.7);
 }
 
 .skill-item-slider.owl-carousel .owl-stage-outer .owl-item.active{
     opacity:1;
     transform: scale(1);
-}*/
+}
 
 .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container .skills-slider-layer .skill-image{
     width: 100%;
@@ -382,6 +388,16 @@ ul,li{
     border-right:2px solid #000;
 }
 
+.owl-theme.skill-item-slider .owl-nav {
+    top:115%;
+    -ms-transform: translate(0%, -115%);
+    -o-transform: translate(0%, -115%);
+    -moz-transform: translate(0%, -115%);
+    -webkit-transform: translate(0%, -115%);
+    transform: translate(0%, -115%);
+    z-index:9;
+}
+
 /* Information Section End */ 
 
 /* My Work Section Start */
@@ -482,3 +498,109 @@ ul,li{
 }
 
 /* My Work Section End */
+
+
+
+/* Start Pulse Animation Effect */
+
+.pulse {
+    box-shadow: 0 0 0 rgba(255,255,255,0.9);
+    -webkit-animation: pulse 2s infinite;
+    -moz-animation: pulse 2s infinite;
+    -o-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+  }
+  .pulse:hover {
+    animation: none;
+  }
+  @-moz-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0.9);
+      -moz-box-shadow: 0 0 0 0 rgba(255,255,255,0.9);
+      box-shadow: 0 0 0 0 rgba(255,255,255,0.9);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 20px rgba(255,255,255,0);
+        -moz-box-shadow: 0 0 0 20px rgba(255,255,255,0);
+        box-shadow: 0 0 0 20px rgba(255,255,255,0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0);
+        -moz-box-shadow: 0 0 0 0 rgba(255,255,255,0);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0);
+    }
+  }
+  @-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0.9);
+      -moz-box-shadow: 0 0 0 0 rgba(255,255,255,0.9);
+      box-shadow: 0 0 0 0 rgba(255,255,255,0.9);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 20px rgba(255,255,255,0);
+        -moz-box-shadow: 0 0 0 20px rgba(255,255,255,0);
+        box-shadow: 0 0 0 20px rgba(255,255,255,0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0);
+        -moz-box-shadow: 0 0 0 0 rgba(255,255,255,0);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0.9);
+      -moz-box-shadow: 0 0 0 0 rgba(255,255,255,0.9);
+      box-shadow: 0 0 0 0 rgba(255,255,255,0.9);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 20px rgba(255,255,255,0);
+        -moz-box-shadow: 0 0 0 20px rgba(255,255,255,0);
+        box-shadow: 0 0 0 20px rgba(255,255,255,0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0);
+        -moz-box-shadow: 0 0 0 0 rgba(255,255,255,0);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0);
+    }
+  }
+
+  /* End Pulse Animation Effect */
+
+
+/* Start Owl Carousel Navigation */ 
+.owl-theme .owl-nav {
+    width:100%;
+    position: absolute;
+    top:50%;
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    display:flex;
+    margin-top:0;
+    justify-content: space-between;
+    padding:0 10px;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    background-color:#ffffff;
+    width:40px;
+    height:40px;
+    border-radius:100%;
+    -webkit-animation: pulse 2s infinite;
+    -moz-animation: pulse 2s infinite;
+    -o-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    font-size:16px;
+}
+
+.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span{
+    line-height:30px;
+    font-size:40px;
+    height:40px;
+    display:inline-block;
+}
+/* End Owl Carousel Navigation */ 
+

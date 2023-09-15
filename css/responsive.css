@@ -46,7 +46,8 @@
         max-width: 80%;
     }
     .kedarnath-skills-section .kedarnath-skills-layer .skills-slider-container {
-        max-width: 60%;
+        /* max-width: 60%; */
+        max-width: 80%;
     }
     .kedarnath-my-work-section .kedarnath-my-work-layer .my-work-slider-container {
         max-width: 100%;
@@ -78,7 +79,7 @@
 
 @media screen and (max-width:576px){
     .kedarnath-skills-section .kedarnath-skills-image-layer .skills-slider-container {
-        max-width: 65%;
+        max-width: 85%;
     }
 }
 
