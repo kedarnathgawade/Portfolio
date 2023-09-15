@@ -34,11 +34,11 @@
     $('.skill-item-slider').owlCarousel({
         items: 1,
         loop: true,
-        nav: false,
+        nav: true,
         dots: false,
         smartSpeed: 1000,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
         autoplay: true,
         margin: 30,
         responsive:{
@@ -64,7 +64,7 @@
     $('.my-work-item-slider').owlCarousel({
         items: 1,
         loop: true,
-        nav: false,
+        nav: true,
         dots: false,
         animateOut: 'animate__fadeOut',
         animateIn: 'animate__zoomIn',
@@ -92,7 +92,7 @@
         }
     });
 
-    // Typewriter Effect
+    // Start Typewriter Effect
     var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -150,9 +150,9 @@
         document.body.appendChild(css);
     };
 
-    // Typewriter Effect
+    // End Typewriter Effect
 
-    // animation
+    // Start Animation
     wow = new WOW(
     {
             boxClass: 'wow',      // default
@@ -162,5 +162,6 @@
             live: true        // default
     })
     wow.init();
+    // End Animation
 
 
