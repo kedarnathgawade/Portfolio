@@ -77,7 +77,7 @@ ul,li{
     background-image: url("../images/background/truck-bg.png");
     background-position:bottom center;
     background-repeat:repeat-x;
-    background-size:cover;
+    background-size:1920px 146px;
     -moz-animation: animatedBackgroundTruck 60s linear infinite;
     -webkit-animation: animatedBackgroundTruck 60s linear infinite;
     -ms-animation: animatedBackgroundTruck 60s linear infinite;
@@ -96,7 +96,7 @@ ul,li{
     background-image: url("../images/background/aeroplane-bg.png");
     background-position:bottom center;
     background-repeat:repeat-x;
-    background-size:cover;
+    background-size:1920px 155px;
     -moz-animation: animatedBackgroundClouds 15s linear infinite;
     -webkit-animation: animatedBackgroundClouds 15s linear infinite;
     -ms-animation: animatedBackgroundClouds 15s linear infinite;
