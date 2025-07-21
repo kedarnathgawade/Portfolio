@@ -119,14 +119,6 @@ li {
     z-index: -1;
 }
 
-.dotted-circle-shape{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 200px;
-    z-index: -1;
-}
-
 .intro-section-shape::before {
     position: absolute;
     content: '';
@@ -140,6 +132,14 @@ li {
     transform: skewX(20deg);
     top: 0;
     left: 0;
+}
+
+.dotted-circle-shape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    z-index: -1;
 }
 
 .kedarnath-intro-box {
@@ -186,7 +186,7 @@ li {
     z-index: 2;
 }
 
-.photo-bg {
+.kedarnath-photo-box .photo-bg {
     position: absolute;
     top: -60px;
     right: -10px;
@@ -218,7 +218,7 @@ li {
     z-index: 2;
 }
 
-.about-bg {
+.kedarnath-about-box .about-bg {
     position: absolute;
     top: -60px;
     right: -10px;
@@ -228,7 +228,7 @@ li {
     z-index: 1;
 }
 
-.about-shape {
+.kedarnath-about-box .about-shape {
     width: 404px;
     height: 525px;
     border-left: 15px solid var(--intro-section-shape-bg);
@@ -239,7 +239,7 @@ li {
     z-index: -1;
 }
 
-.about-shape::before {
+.kedarnath-about-box .about-shape::before {
     position: absolute;
     content: '';
     width: 15px;
@@ -249,7 +249,7 @@ li {
     right: 0;
 }
 
-.about-shape::after {
+.kedarnath-about-box .about-shape::after {
     position: absolute;
     content: '';
     width: 104%;
@@ -445,6 +445,18 @@ li {
     top: 12.5%;
     left: 35%;
     transition-delay: 1s;
+}
+
+.skill-box.show-circle.css-circle::after {
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 75px;
+    width: 150px;
+    height: 10px;
+    background-color: white;
+    transform: rotate(45deg);
+    z-index: 0;
 }
 
 .skill-box.show-circle.bootstrap-circle {
