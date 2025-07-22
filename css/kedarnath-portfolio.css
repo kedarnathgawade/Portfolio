@@ -291,8 +291,7 @@ li {
     background-color: var(--intro-section-shape-bg);
     padding: 100px 0 160px;
     position: relative;
-    z-index: 2;
-    overflow: visible;
+    z-index: 3;
 }
 
 .kedarnath-skills-section .arrow-shape {
@@ -326,6 +325,21 @@ li {
     top: -198px;
 }
 
+.kedarnath-skills-section:after {
+    content: "";
+    width: 100%;
+    height: 199px;
+    box-sizing: border-box;
+    position: absolute;
+    background-image: url(../images/background/curve-bottom-bg.png);
+    background-size: 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    z-index: 1;
+    bottom: -199px;
+}
+
 .skill-info-box {
     position: relative;
     overflow: visible;
@@ -342,7 +356,6 @@ li {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .3);
     position: absolute;
     z-index: 1;
     cursor: pointer;
@@ -357,6 +370,19 @@ li {
     -moz-transition: all 1s linear;
     -ms-transition: all 1s linear;
     transition: all 1s linear;
+}
+
+.skill-info-box .skill-cirlce::after {
+    content: "";
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .3);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .skill-info-box .skill-intro {
@@ -435,10 +461,26 @@ li {
     transform: translateY(-50%) translateX(50%) scale(1);
 }
 
+.skill-box.show-circle::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background-color: white;
+    z-index: -1;
+    /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2); */
+}
+
 .skill-box.show-circle.html-circle {
     top: -5%;
     left: 50%;
     transition-delay: 2s;
+}
+
+.skill-box.show-circle.html-circle::before {
+    top: 150px;
+    left: 0px;
+    transform: rotate(90deg);
 }
 
 .skill-box.show-circle.css-circle {
@@ -447,16 +489,10 @@ li {
     transition-delay: 1s;
 }
 
-.skill-box.show-circle.css-circle::after {
-    content: '';
-    position: absolute;
+.skill-box.show-circle.css-circle::before {
     top: 150px;
     left: 75px;
-    width: 150px;
-    height: 10px;
-    background-color: white;
     transform: rotate(45deg);
-    z-index: 0;
 }
 
 .skill-box.show-circle.bootstrap-circle {
@@ -465,9 +501,21 @@ li {
     transition-delay: 3s;
 }
 
+.skill-box.show-circle.bootstrap-circle::before {
+    top: 150px;
+    right: 75px;
+    transform: rotate(-45deg);
+}
+
 .skill-box.show-circle.sass-circle {
     top: 50%;
     left: 30%;
+}
+
+.skill-box.show-circle.sass-circle::before {
+    top: 75px;
+    left: 75px;
+    transform: rotate(0deg);
 }
 
 .skill-box.show-circle.javascript-circle {
@@ -476,10 +524,22 @@ li {
     transition-delay: 4s;
 }
 
+.skill-box.show-circle.javascript-circle::before {
+    top: 75px;
+    right: 75px;
+    transform: rotate(0deg);
+}
+
 .skill-box.show-circle.jquery-circle {
     top: 88.5%;
     right: 35%;
     transition-delay: 5s;
+}
+
+.skill-box.show-circle.jquery-circle::before {
+    top: 0px;
+    right: 75px;
+    transform: rotate(45deg);
 }
 
 .skill-box.show-circle.github-circle {
@@ -488,10 +548,22 @@ li {
     transition-delay: 6s;
 }
 
+.skill-box.show-circle.github-circle::before {
+    top: 0px;
+    left: 0px;
+    transform: rotate(90deg);
+}
+
 .skill-box.show-circle.tailwind-circle {
     top: 88.5%;
     left: 35%;
     transition-delay: 7s;
+}
+
+.skill-box.show-circle.tailwind-circle::before {
+    top: 0px;
+    left: 75px;
+    transform: rotate(-45deg);
 }
 
 .skill-box.show-circle.scale-circle {
@@ -525,36 +597,56 @@ li {
     height: auto;
 }
 
-.skill-info-box .skill-cirlce .typewrite {
+.skill-info-box .skill-cirlce .skill-title {
     padding: 10px 0 0;
     font-size: 14px;
     line-height: 14px;
     font-weight: bold;
     text-align: center;
-}
-
-.skill-info-box .skill-cirlce .skill-title span {
-    border-right: 2px solid black;
-}
-
-.skill-item-slider .skill-cirlce .skill-title {
     display: block;
 }
 
 .skill-item-slider .skill-box {
+    position: relative;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
-    width: 200px;
-    max-width: 100%;
-    height: 200px;
-    max-height: 100%;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+.skill-item-slider .skill-box::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background-color: white;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    transform: rotate(90deg);
+}
+
+.skill-item-slider .skill-box::after {
+    content: "";
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .3);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .skill-item-slider .skill-box img {
@@ -562,25 +654,14 @@ li {
     height: auto;
 }
 
-.skill-item-slider .skill-box .typewrite {
-    padding: 10px 0 0;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.skill-item-slider .skill-box .typewrite span {
-    border-right: 2px solid #000;
-}
 
 .skill-item-slider .skill-box .skill-title {
     display: block;
 }
 
 .skill-item-slider.owl-carousel .owl-stage-outer {
-    overflow: visible;
-    padding: 30px 0 30px;
+    padding: 60px 0 60px;
+    border-top: 5px solid white;
 }
 
 .skill-item-slider.owl-carousel .owl-stage-outer .owl-item {
@@ -588,11 +669,11 @@ li {
     align-items: center;
     justify-content: center;
     opacity: 1;
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
     -moz-transition: all ease-out 2s;
     -webkit-transition: all ease-out 2s;
     transition: all ease-out 2s;
@@ -600,11 +681,11 @@ li {
 
 .skill-item-slider.owl-carousel .owl-stage-outer .owl-item.active.center {
     opacity: 1;
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    -moz-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1.2);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     -moz-transition: all ease-out 1s;
     -webkit-transition: all ease-out 1s;
     transition: all ease-out 1s;
