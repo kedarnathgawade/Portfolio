@@ -14,27 +14,28 @@
 
 @media screen and (max-width:1280px) {
     .skill-box.show-circle.css-circle {
-    left: 34%;
-}
-.skill-box.show-circle.sass-circle {
-    left: 28%;
-}
+        left: 34%;
+    }
 
-.skill-box.show-circle.tailwind-circle {
-    left: 34%;
-}
+    .skill-box.show-circle.sass-circle {
+        left: 28%;
+    }
 
-.skill-box.show-circle.bootstrap-circle {
-    right: 34%;
-}
+    .skill-box.show-circle.tailwind-circle {
+        left: 34%;
+    }
 
-.skill-box.show-circle.javascript-circle {
-    right: 28%;
-}
+    .skill-box.show-circle.bootstrap-circle {
+        right: 34%;
+    }
 
-.skill-box.show-circle.jquery-circle {
-    right: 34%;
-}
+    .skill-box.show-circle.javascript-circle {
+        right: 28%;
+    }
+
+    .skill-box.show-circle.jquery-circle {
+        right: 34%;
+    }
 }
 
 @media screen and (max-width:1199px) {}
@@ -81,6 +82,10 @@
         padding: 60px 0 160px;
     }
 
+    .kedarnath-skills-section {
+        padding: 60px 0 60px;
+    }
+
     .kedarnath-about-box .about-shape {
         bottom: 0;
     }
@@ -90,6 +95,66 @@
         right: 0px;
         width: 100%;
         text-align: center;
+    }
+
+    .skill-info-box {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-info-box .skill-intro {
+        top: auto;
+        left: auto;
+        -webkit-transform: scale(1.2) translateY(-50%) translateX(-50%);
+        -moz-transform: scale(1.2) translateY(-50%) translateX(-50%);
+        -ms-transform: scale(1.2) translateY(-50%) translateX(-50%);
+        -o-transform: scale(1.2) translateY(-50%) translateX(-50%);
+        transform: scale(1) translateY(0%) translateX(0%);
+    }
+
+    .skill-info-box .skill-intro.big-circle {
+        top: auto;
+        left: auto;
+        -webkit-transform: scale(1.2) translateY(-50%) translateX(-50%);
+        -moz-transform: scale(1.2) translateY(-50%) translateX(-50%);
+        -ms-transform: scale(1.2) translateY(-50%) translateX(-50%);
+        -o-transform: scale(1.2) translateY(-50%) translateX(-50%);
+        transform: scale(1.2) translateY(0%) translateX(0%);
+    }
+
+    .skill-info-box .skill-intro::before {
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 5px;
+        background-color: white;
+        z-index: -1;
+    }
+
+    .skill-info-box .skill-intro::before {
+        top: 200px;
+        left: 0px;
+        transform: rotate(90deg);
+    }
+
+    .skill-info-box .skill-intro.big-circle::before {
+        display: none;
+    }
+
+    .kedarnath-skills-section .arrow-shape {
+        top: 6%;
+        width: 150px;
+    }
+
+    .kedarnath-skills-section .arrow-shape2 {
+        top: 6%;
+        width: 150px;
+    }
+
+    .skill-cirlce.skill-box {
+        display: none;
     }
 
 
